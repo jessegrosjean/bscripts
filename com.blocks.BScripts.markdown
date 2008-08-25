@@ -1,0 +1,1 @@
+This plugin wraps the [CocoaScriptMenu](http://jay.tuley.name/articles/2005/09/24/my-sunday-project-reusable-cocoa-script-menu) project to include a user customizable applescript menu in your application.

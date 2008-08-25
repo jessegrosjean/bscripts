@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+	id="com.blocks.BScripts"
+	label="Scripts"
+	version="1.0.0"
+	info="Blocks Scripts">
+
+	<requirement bundle="com.blocks.Blocks" version="1.0.0" />
+	<requirement bundle="com.blocks.BLifecycle" version="1.0.0" />
+
+	<extension point="com.blocks.BLifecycle.lifecycle">
+		<applicationDidFinishLaunching class="BScriptsController sharedInstance" />
+	</extension>
+
+</plugin>

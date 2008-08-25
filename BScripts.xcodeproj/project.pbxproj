@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		434AE3BA0C95957200F38812 /* Blocks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 434AE3B50C95956C00F38812 /* Blocks.framework */; };
+		434AE3BE0C95959600F38812 /* Plugin.xml in Resources */ = {isa = PBXBuildFile; fileRef = 434AE3BD0C95959600F38812 /* Plugin.xml */; };
+		434AE3C10C95960000F38812 /* BScriptsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 434AE3C00C95960000F38812 /* BScriptsController.m */; };
+		434AE3F70C9597A900F38812 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 434AE3F60C9597A900F38812 /* Localizable.strings */; };
+		434AE4000C9597FF00F38812 /* PluginXml.strings in Resources */ = {isa = PBXBuildFile; fileRef = 434AE3FF0C9597FF00F38812 /* PluginXml.strings */; };
+		436540E00CC1AC2A0058972E /* CSMAppleScriptCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540C30CC1AC2A0058972E /* CSMAppleScriptCommand.m */; };
+		436540E10CC1AC2A0058972E /* CSMBaseCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540C50CC1AC2A0058972E /* CSMBaseCommand.m */; };
+		436540E20CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540C70CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.m */; };
+		436540E30CC1AC2A0058972E /* CSMExecutableCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540C90CC1AC2A0058972E /* CSMExecutableCommand.m */; };
+		436540E40CC1AC2A0058972E /* CSMFolderCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540CB0CC1AC2A0058972E /* CSMFolderCommand.m */; };
+		436540E50CC1AC2A0058972E /* CSMPlainOpenCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540CD0CC1AC2A0058972E /* CSMPlainOpenCommand.m */; };
+		436540E60CC1AC2A0058972E /* CSMShellScriptCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540CF0CC1AC2A0058972E /* CSMShellScriptCommand.m */; };
+		436540E70CC1AC2A0058972E /* CSMWorkflowCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540D10CC1AC2A0058972E /* CSMWorkflowCommand.m */; };
+		436540E80CC1AC2A0058972E /* CSMCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540D30CC1AC2A0058972E /* CSMCommand.m */; };
+		436540E90CC1AC2A0058972E /* CSMCommandCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540D50CC1AC2A0058972E /* CSMCommandCreator.m */; };
+		436540EA0CC1AC2A0058972E /* CSMFileSubscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540D70CC1AC2A0058972E /* CSMFileSubscription.m */; };
+		436540EB0CC1AC2A0058972E /* CSMMenuNameParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540D90CC1AC2A0058972E /* CSMMenuNameParser.m */; };
+		436540EC0CC1AC2A0058972E /* CSMScriptMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540DB0CC1AC2A0058972E /* CSMScriptMenu.m */; };
+		436540ED0CC1AC2A0058972E /* NSString-UTIAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540DD0CC1AC2A0058972E /* NSString-UTIAdditions.m */; };
+		436540EE0CC1AC2A0058972E /* TenThreeCompatibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 436540DF0CC1AC2A0058972E /* TenThreeCompatibility.m */; };
+		43D0178E0CC1B4920097ED63 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 43D0178C0CC1B4920097ED63 /* License.txt */; };
+		43D0178F0CC1B4920097ED63 /* scripticon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 43D0178D0CC1B4920097ED63 /* scripticon.tiff */; };
+		8893065D0D5B7613002725F2 /* com.blocks.BScripts.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 8893065C0D5B7613002725F2 /* com.blocks.BScripts.markdown */; };
+		8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		434AE3B40C95956C00F38812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 434AE3B00C95956C00F38812 /* Blocks.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+		434AE3BB0C95957900F38812 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 434AE3B00C95956C00F38812 /* Blocks.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = Blocks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCF630370AF2F00C91783 /* BScripts_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BScripts_Prefix.pch; sourceTree = "<group>"; };
+		434AE3B00C95956C00F38812 /* Blocks.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Blocks.xcodeproj; path = ../Blocks/Blocks.xcodeproj; sourceTree = SOURCE_ROOT; };
+		434AE3BD0C95959600F38812 /* Plugin.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Plugin.xml; sourceTree = "<group>"; };
+		434AE3BF0C95960000F38812 /* BScriptsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BScriptsController.h; sourceTree = "<group>"; };
+		434AE3C00C95960000F38812 /* BScriptsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BScriptsController.m; sourceTree = "<group>"; };
+		434AE3F40C95979D00F38812 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		434AE3FD0C9597F500F38812 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/PluginXml.strings; sourceTree = "<group>"; };
+		436540C00CC1AC2A0058972E /* CocoaScriptMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CocoaScriptMenu.h; sourceTree = "<group>"; };
+		436540C20CC1AC2A0058972E /* CSMAppleScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMAppleScriptCommand.h; sourceTree = "<group>"; };
+		436540C30CC1AC2A0058972E /* CSMAppleScriptCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMAppleScriptCommand.m; sourceTree = "<group>"; };
+		436540C40CC1AC2A0058972E /* CSMBaseCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMBaseCommand.h; sourceTree = "<group>"; };
+		436540C50CC1AC2A0058972E /* CSMBaseCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMBaseCommand.m; sourceTree = "<group>"; };
+		436540C60CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "CSMCommand-SubclassMustImplement.h"; sourceTree = "<group>"; };
+		436540C70CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "CSMCommand-SubclassMustImplement.m"; sourceTree = "<group>"; };
+		436540C80CC1AC2A0058972E /* CSMExecutableCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMExecutableCommand.h; sourceTree = "<group>"; };
+		436540C90CC1AC2A0058972E /* CSMExecutableCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMExecutableCommand.m; sourceTree = "<group>"; };
+		436540CA0CC1AC2A0058972E /* CSMFolderCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMFolderCommand.h; sourceTree = "<group>"; };
+		436540CB0CC1AC2A0058972E /* CSMFolderCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMFolderCommand.m; sourceTree = "<group>"; };
+		436540CC0CC1AC2A0058972E /* CSMPlainOpenCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMPlainOpenCommand.h; sourceTree = "<group>"; };
+		436540CD0CC1AC2A0058972E /* CSMPlainOpenCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMPlainOpenCommand.m; sourceTree = "<group>"; };
+		436540CE0CC1AC2A0058972E /* CSMShellScriptCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMShellScriptCommand.h; sourceTree = "<group>"; };
+		436540CF0CC1AC2A0058972E /* CSMShellScriptCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMShellScriptCommand.m; sourceTree = "<group>"; };
+		436540D00CC1AC2A0058972E /* CSMWorkflowCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMWorkflowCommand.h; sourceTree = "<group>"; };
+		436540D10CC1AC2A0058972E /* CSMWorkflowCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMWorkflowCommand.m; sourceTree = "<group>"; };
+		436540D20CC1AC2A0058972E /* CSMCommand.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMCommand.h; sourceTree = "<group>"; };
+		436540D30CC1AC2A0058972E /* CSMCommand.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMCommand.m; sourceTree = "<group>"; };
+		436540D40CC1AC2A0058972E /* CSMCommandCreator.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMCommandCreator.h; sourceTree = "<group>"; };
+		436540D50CC1AC2A0058972E /* CSMCommandCreator.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMCommandCreator.m; sourceTree = "<group>"; };
+		436540D60CC1AC2A0058972E /* CSMFileSubscription.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMFileSubscription.h; sourceTree = "<group>"; };
+		436540D70CC1AC2A0058972E /* CSMFileSubscription.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMFileSubscription.m; sourceTree = "<group>"; };
+		436540D80CC1AC2A0058972E /* CSMMenuNameParser.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMMenuNameParser.h; sourceTree = "<group>"; };
+		436540D90CC1AC2A0058972E /* CSMMenuNameParser.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMMenuNameParser.m; sourceTree = "<group>"; };
+		436540DA0CC1AC2A0058972E /* CSMScriptMenu.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = CSMScriptMenu.h; sourceTree = "<group>"; };
+		436540DB0CC1AC2A0058972E /* CSMScriptMenu.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = CSMScriptMenu.m; sourceTree = "<group>"; };
+		436540DC0CC1AC2A0058972E /* NSString-UTIAdditions.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = "NSString-UTIAdditions.h"; sourceTree = "<group>"; };
+		436540DD0CC1AC2A0058972E /* NSString-UTIAdditions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = "NSString-UTIAdditions.m"; sourceTree = "<group>"; };
+		436540DE0CC1AC2A0058972E /* TenThreeCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; path = TenThreeCompatibility.h; sourceTree = "<group>"; };
+		436540DF0CC1AC2A0058972E /* TenThreeCompatibility.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = TenThreeCompatibility.m; sourceTree = "<group>"; };
+		43D0178C0CC1B4920097ED63 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		43D0178D0CC1B4920097ED63 /* scripticon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = scripticon.tiff; sourceTree = "<group>"; };
+		8893065C0D5B7613002725F2 /* com.blocks.BScripts.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = com.blocks.BScripts.markdown; sourceTree = "<group>"; wrapsLines = 1; };
+		8D5B49B6048680CD000E48DA /* BScripts.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BScripts.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D5B49B7048680CD000E48DA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2F7E65807B2D6F200F64583 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D5B49B3048680CD000E48DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434AE3BA0C95957200F38812 /* Blocks.framework in Frameworks */,
+				8D5B49B4048680CD000E48DA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* BScripts */ = {
+			isa = PBXGroup;
+			children = (
+				434AE3B00C95956C00F38812 /* Blocks.xcodeproj */,
+				08FB77AFFE84173DC02AAC07 /* Classes */,
+				32C88E010371C26100C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = BScripts;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B7048680CD000E48DA /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+				434AE3BD0C95959600F38812 /* Plugin.xml */,
+				434AE3FF0C9597FF00F38812 /* PluginXml.strings */,
+				434AE3F60C9597A900F38812 /* Localizable.strings */,
+				8893065C0D5B7613002725F2 /* com.blocks.BScripts.markdown */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AFFE84173DC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				434AE3BF0C95960000F38812 /* BScriptsController.h */,
+				434AE3C00C95960000F38812 /* BScriptsController.m */,
+				436540BF0CC1ABE50058972E /* CocoaScriptMenu */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+				D2F7E65807B2D6F200F64583 /* CoreData.framework */,
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5B49B6048680CD000E48DA /* BScripts.plugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32C88E010371C26100C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF630370AF2F00C91783 /* BScripts_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		434AE3B10C95956C00F38812 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				434AE3B50C95956C00F38812 /* Blocks.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		436540BF0CC1ABE50058972E /* CocoaScriptMenu */ = {
+			isa = PBXGroup;
+			children = (
+				436540C00CC1AC2A0058972E /* CocoaScriptMenu.h */,
+				436540C10CC1AC2A0058972E /* CSMCommand */,
+				436540D20CC1AC2A0058972E /* CSMCommand.h */,
+				436540D30CC1AC2A0058972E /* CSMCommand.m */,
+				436540D40CC1AC2A0058972E /* CSMCommandCreator.h */,
+				436540D50CC1AC2A0058972E /* CSMCommandCreator.m */,
+				436540D60CC1AC2A0058972E /* CSMFileSubscription.h */,
+				436540D70CC1AC2A0058972E /* CSMFileSubscription.m */,
+				436540D80CC1AC2A0058972E /* CSMMenuNameParser.h */,
+				436540D90CC1AC2A0058972E /* CSMMenuNameParser.m */,
+				436540DA0CC1AC2A0058972E /* CSMScriptMenu.h */,
+				436540DB0CC1AC2A0058972E /* CSMScriptMenu.m */,
+				436540DC0CC1AC2A0058972E /* NSString-UTIAdditions.h */,
+				436540DD0CC1AC2A0058972E /* NSString-UTIAdditions.m */,
+				436540DE0CC1AC2A0058972E /* TenThreeCompatibility.h */,
+				436540DF0CC1AC2A0058972E /* TenThreeCompatibility.m */,
+				43D0178C0CC1B4920097ED63 /* License.txt */,
+				43D0178D0CC1B4920097ED63 /* scripticon.tiff */,
+			);
+			name = CocoaScriptMenu;
+			sourceTree = "<group>";
+		};
+		436540C10CC1AC2A0058972E /* CSMCommand */ = {
+			isa = PBXGroup;
+			children = (
+				436540C20CC1AC2A0058972E /* CSMAppleScriptCommand.h */,
+				436540C30CC1AC2A0058972E /* CSMAppleScriptCommand.m */,
+				436540C40CC1AC2A0058972E /* CSMBaseCommand.h */,
+				436540C50CC1AC2A0058972E /* CSMBaseCommand.m */,
+				436540C60CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.h */,
+				436540C70CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.m */,
+				436540C80CC1AC2A0058972E /* CSMExecutableCommand.h */,
+				436540C90CC1AC2A0058972E /* CSMExecutableCommand.m */,
+				436540CA0CC1AC2A0058972E /* CSMFolderCommand.h */,
+				436540CB0CC1AC2A0058972E /* CSMFolderCommand.m */,
+				436540CC0CC1AC2A0058972E /* CSMPlainOpenCommand.h */,
+				436540CD0CC1AC2A0058972E /* CSMPlainOpenCommand.m */,
+				436540CE0CC1AC2A0058972E /* CSMShellScriptCommand.h */,
+				436540CF0CC1AC2A0058972E /* CSMShellScriptCommand.m */,
+				436540D00CC1AC2A0058972E /* CSMWorkflowCommand.h */,
+				436540D10CC1AC2A0058972E /* CSMWorkflowCommand.m */,
+			);
+			path = CSMCommand;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D5B49AC048680CD000E48DA /* BScripts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BScripts" */;
+			buildPhases = (
+				434AE3CB0C95976000F38812 /* Run genstrings Script */,
+				8D5B49AF048680CD000E48DA /* Resources */,
+				8D5B49B1048680CD000E48DA /* Sources */,
+				8D5B49B3048680CD000E48DA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				434AE3BC0C95957900F38812 /* PBXTargetDependency */,
+			);
+			name = BScripts;
+			productInstallPath = "$(HOME)/Library/Bundles";
+			productName = BScripts;
+			productReference = 8D5B49B6048680CD000E48DA /* BScripts.plugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BScripts" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 1;
+			mainGroup = 089C166AFE841209C02AAC07 /* BScripts */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 434AE3B10C95956C00F38812 /* Products */;
+					ProjectRef = 434AE3B00C95956C00F38812 /* Blocks.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8D5B49AC048680CD000E48DA /* BScripts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		434AE3B50C95956C00F38812 /* Blocks.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Blocks.framework;
+			remoteRef = 434AE3B40C95956C00F38812 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D5B49AF048680CD000E48DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D5B49B0048680CD000E48DA /* InfoPlist.strings in Resources */,
+				434AE3BE0C95959600F38812 /* Plugin.xml in Resources */,
+				434AE3F70C9597A900F38812 /* Localizable.strings in Resources */,
+				434AE4000C9597FF00F38812 /* PluginXml.strings in Resources */,
+				43D0178E0CC1B4920097ED63 /* License.txt in Resources */,
+				43D0178F0CC1B4920097ED63 /* scripticon.tiff in Resources */,
+				8893065D0D5B7613002725F2 /* com.blocks.BScripts.markdown in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		434AE3CB0C95976000F38812 /* Run genstrings Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run genstrings Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ $CONFIGURATION != 'Release' ]; then\n\texit\nfi\n\ngenstrings -s BLocalizedString -o English.lproj/ *.[mch] */*.[mch]";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D5B49B1048680CD000E48DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				434AE3C10C95960000F38812 /* BScriptsController.m in Sources */,
+				436540E00CC1AC2A0058972E /* CSMAppleScriptCommand.m in Sources */,
+				436540E10CC1AC2A0058972E /* CSMBaseCommand.m in Sources */,
+				436540E20CC1AC2A0058972E /* CSMCommand-SubclassMustImplement.m in Sources */,
+				436540E30CC1AC2A0058972E /* CSMExecutableCommand.m in Sources */,
+				436540E40CC1AC2A0058972E /* CSMFolderCommand.m in Sources */,
+				436540E50CC1AC2A0058972E /* CSMPlainOpenCommand.m in Sources */,
+				436540E60CC1AC2A0058972E /* CSMShellScriptCommand.m in Sources */,
+				436540E70CC1AC2A0058972E /* CSMWorkflowCommand.m in Sources */,
+				436540E80CC1AC2A0058972E /* CSMCommand.m in Sources */,
+				436540E90CC1AC2A0058972E /* CSMCommandCreator.m in Sources */,
+				436540EA0CC1AC2A0058972E /* CSMFileSubscription.m in Sources */,
+				436540EB0CC1AC2A0058972E /* CSMMenuNameParser.m in Sources */,
+				436540EC0CC1AC2A0058972E /* CSMScriptMenu.m in Sources */,
+				436540ED0CC1AC2A0058972E /* NSString-UTIAdditions.m in Sources */,
+				436540EE0CC1AC2A0058972E /* TenThreeCompatibility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		434AE3BC0C95957900F38812 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Blocks;
+			targetProxy = 434AE3BB0C95957900F38812 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		434AE3F60C9597A900F38812 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434AE3F40C95979D00F38812 /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		434AE3FF0C9597FF00F38812 /* PluginXml.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				434AE3FD0C9597F500F38812 /* English */,
+			);
+			name = PluginXml.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB913B08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BScripts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = BScripts;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		1DEB913C08733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = BScripts_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				PRODUCT_NAME = BScripts;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		1DEB913F08733D840010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Debug;
+		};
+		1DEB914008733D840010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					ppc,
+					i386,
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB913A08733D840010E9CD /* Build configuration list for PBXNativeTarget "BScripts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913B08733D840010E9CD /* Debug */,
+				1DEB913C08733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB913E08733D840010E9CD /* Build configuration list for PBXProject "BScripts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB913F08733D840010E9CD /* Debug */,
+				1DEB914008733D840010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
