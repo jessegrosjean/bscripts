@@ -97,7 +97,6 @@
 
 //Scan menu name
 -(BOOL)CSM_scanName:(NSScanner*) aScanner{
-#warning 64BIT: Check formatting arguments
     NSCharacterSet* tStart = [NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"{%C",0x2045,nil]];
     if([aScanner scanUpToCharactersFromSet:tStart intoString:&theMenuName] && ![aScanner isAtEnd])
         [aScanner scanCharactersFromSet:tStart intoString:nil];
@@ -109,7 +108,6 @@
     
     
     //Scan modifiers
-#warning 64BIT: Check formatting arguments
     NSCharacterSet* tModifiers = [NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"*^%%$%C%C%C%C",0x2318,0x2303,0x21E7,0x2325,nil]];
     NSString* tModString = nil;
     if([aScanner scanCharactersFromSet:tModifiers intoString:&tModString]){
@@ -144,7 +142,6 @@
     
     
     //scan shortcut key
-#warning 64BIT: Check formatting arguments
     NSCharacterSet* tEnd = [NSCharacterSet characterSetWithCharactersInString:[NSString stringWithFormat:@"}%C",0x2046,nil]];
     
     NSString* tKeyEquivString= nil;
@@ -153,7 +150,6 @@
             if([[[tKeyEquivString substringToIndex:1] uppercaseString] isEqualToString:@"F"]  
                && [tKeyEquivString length] < 4){
                  NSInteger tFValue = [[tKeyEquivString substringFromIndex:1] integerValue] -1;
-#warning 64BIT: Check formatting arguments
                 theKeyEquivalent = [NSString stringWithFormat:@"%C", NSF1FunctionKey + tFValue];
             }else{
                 return NO;

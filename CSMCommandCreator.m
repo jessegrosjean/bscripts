@@ -25,14 +25,13 @@
        return [[CSMAppleScriptCommand alloc] initWithScriptPath:aPath];
     }else if([tUTI conformsToUTI:@"public.shell-script"]){
         return  [[CSMShellScriptCommand alloc] initWithScriptPath:aPath];
-    }else if([tUTI conformsToUTI:TTCConstantIfAvailible((void**)&kUTTypeApplication,@"com.apple.application ")]){
+    }else if([tUTI conformsToUTI:(id)TTCConstantIfAvailible((void**)&kUTTypeApplication,@"com.apple.application ")]){
         return [[CSMExecutableCommand alloc] initWithScriptPath:aPath];
     }else if([tUTI conformsToUTI:tUTTypeWorkflow]){
         return [[CSMWorkflowCommand alloc] initWithScriptPath:aPath];
-    }else if([tUTI conformsToUTI:TTCConstantIfAvailible((void**)&kUTTypeFolder,@"public.folder")]){
+    }else if([tUTI conformsToUTI:(id)TTCConstantIfAvailible((void**)&kUTTypeFolder,@"public.folder")]){
         return [[CSMFolderCommand alloc] initWithScriptPath:aPath];
     }else{
-#warning 64BIT: Check formatting arguments
         NSLog(@"Unknown Script %@ | %@",aPath, [aPath UTIForPath]);
         return [[CSMPlainOpenCommand alloc] initWithScriptPath:aPath];
     }

@@ -20,8 +20,7 @@ id TTCConstantIfAvailible(void** aConst, id aKnownValue){
 }
 
 BOOL TTCRunningLessThan10_4O(){
-#warning 64BIT: Inspect use of long
-    long vers;
+    SInt32 vers;
     Gestalt( gestaltSystemVersion, &vers);
     return (vers < 0x00001040);
 }

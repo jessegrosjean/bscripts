@@ -49,7 +49,6 @@
 #import "CSMMenuNameParser.h"
 #import "CSMCommand-SubclassMustImplement.h"
 
-#warning 64BIT: Check formatting arguments
 #define ASSERT_UNIMPLEMENTED [NSException raise:@"UnImplmentedMethod" format:@"Subclass %@ Must Implement %@", NSStringFromClass([self class]),NSStringFromSelector(_cmd),nil]
 
 static id <CSMCommandCreator> theCSMCommandCreator;
