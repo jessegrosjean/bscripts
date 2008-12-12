@@ -146,13 +146,6 @@ void CSMUpdateMenuHandle(FNMessage message,OptionBits flags,void * refcon,FNSubs
 
 -(void)updateMenuForScripts:(NSMenu*)aMenu{
     NSMutableArray* tTotalMenus = [NSMutableArray array];
-    [tTotalMenus addObject:[self showScriptFolderMenuItem]];
-    
-    NSMenuItem* tUpdateMenu = [[[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Update Scripts Menu",@"Update Scripts Menu") action:@selector(updateScriptMenu:) keyEquivalent:@""] autorelease];
-    [tUpdateMenu setKeyEquivalentModifierMask:NSAlternateKeyMask];
-    [tUpdateMenu setAlternate:YES];
-    [tUpdateMenu setTarget:self];
-    [tTotalMenus addObject:tUpdateMenu];
 
     NSEnumerator* tEnum = [[self scriptLocations] objectEnumerator];
 
@@ -160,12 +153,20 @@ void CSMUpdateMenuHandle(FNMessage message,OptionBits flags,void * refcon,FNSubs
     while (tPath = [tEnum nextObject]){
         [self createFileSystemSubscriptionForPath:tPath];
         NSArray* tDomainItems = [CSMScriptMenu menuItemsForPath:tPath];
-        if([tDomainItems count]  > 0){
-            [tTotalMenus addObject:[NSMenuItem separatorItem]];
+        if([tDomainItems count] > 0){
             [tTotalMenus addObjectsFromArray:tDomainItems];
+            [tTotalMenus addObject:[NSMenuItem separatorItem]];
         }
     }
     
+	[tTotalMenus addObject:[self showScriptFolderMenuItem]];
+	
+	NSMenuItem* tUpdateMenu = [[[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Update Scripts Menu",@"Update Scripts Menu") action:@selector(updateScriptMenu:) keyEquivalent:@""] autorelease];
+	[tUpdateMenu setKeyEquivalentModifierMask:NSAlternateKeyMask];
+	[tUpdateMenu setAlternate:YES];
+	[tUpdateMenu setTarget:self];
+	[tTotalMenus addObject:tUpdateMenu];
+	
     [CSMScriptMenu refreshMenu:aMenu withMenuItems:tTotalMenus];
 }
 
