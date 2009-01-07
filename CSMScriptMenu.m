@@ -161,7 +161,7 @@ void CSMUpdateMenuHandle(FNMessage message,OptionBits flags,void * refcon,FNSubs
     
 	[tTotalMenus addObject:[self showScriptFolderMenuItem]];
 	
-	NSMenuItem* tUpdateMenu = [[[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Update Scripts Menu",@"Update Scripts Menu") action:@selector(updateScriptMenu:) keyEquivalent:@""] autorelease];
+	NSMenuItem* tUpdateMenu = [[[NSMenuItem alloc] initWithTitle:BLocalizedString(@"Update Scripts Menu",@"Update Scripts Menu") action:@selector(updateScriptMenu:) keyEquivalent:@""] autorelease];
 	[tUpdateMenu setKeyEquivalentModifierMask:NSAlternateKeyMask];
 	[tUpdateMenu setAlternate:YES];
 	[tUpdateMenu setTarget:self];
@@ -254,7 +254,7 @@ void CSMUpdateMenuHandle(FNMessage message,OptionBits flags,void * refcon,FNSubs
     if ( [self delegate] !=nil && [[self delegate] respondsToSelector:@selector(showScriptFolderMenuItem)] )
         return [[self delegate] showScriptFolderMenuItem];
     
-    NSMenuItem* tMenuItem = [[NSMenuItem alloc] initWithTitle:NSLocalizedString(@"Open Scripts Folder",@"Open Scripts Folder") action:@selector(showScriptsFolder:) keyEquivalent:@""];
+    NSMenuItem* tMenuItem = [[NSMenuItem alloc] initWithTitle:BLocalizedString(@"Open Scripts Folder",@"Open Scripts Folder") action:@selector(showScriptsFolder:) keyEquivalent:@""];
     [tMenuItem setTarget:self];
     return [tMenuItem autorelease];
 }
@@ -281,7 +281,7 @@ void CSMUpdateMenuHandle(FNMessage message,OptionBits flags,void * refcon,FNSubs
     
     if(theMainScriptMenuItem == nil){
         theMainScriptMenuItem = [[CSMScriptMenu typicalScriptMenuItem] retain];
-        NSInteger tIndex =[[NSApp mainMenu] indexOfItemWithTitle:NSLocalizedString(@"Help",@"Help")];
+        NSInteger tIndex =[[NSApp mainMenu] indexOfItemWithTitle:BLocalizedString(@"Help",@"Help")];
         
         if(tIndex < 0)
             [[NSApp mainMenu] addItem:theMainScriptMenuItem];
